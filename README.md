@@ -4,6 +4,8 @@ ArcGIS GeoEvent Server 10.5.x Sample WebSocket connector for subscribing to an e
 
 ![App](websocket-for-geoevent.png?raw=true)
 
+This WebSocket transport uses the latest org.eclipse.jetty version 9 libraries.  It is an inbound client-mode transport only.
+
 ## Features
 * WebSocket Inbound Transport
 
