@@ -76,7 +76,7 @@ public class WebsocketInboundSocket
   public void close()
   {
     if (session != null)
-      session.close(StatusCode.NORMAL, "${com.esri.geoevent.transport.websocket-jetty9-transport.TRANSPORT_STOPPED}");
+      session.close(StatusCode.NORMAL, "${com.esri.geoevent.transport.websocket-transport.TRANSPORT_STOPPED}");
   }
 
   public boolean isConnected()
