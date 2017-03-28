@@ -33,6 +33,7 @@ import java.nio.charset.StandardCharsets;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.http.client.utils.URIBuilder;
+import org.eclipse.jetty.util.ssl.SslContextFactory;
 import org.eclipse.jetty.websocket.api.Session;
 import org.eclipse.jetty.websocket.client.ClientUpgradeRequest;
 import org.eclipse.jetty.websocket.client.WebSocketClient;
@@ -121,7 +122,17 @@ public class WebsocketInboundTransport extends InboundTransportBase
 
   private WebsocketInboundSocket connect() throws Exception
   {
-    WebSocketClient wsc = new WebSocketClient();
+	WebSocketClient wsc = null;
+	  
+	String uriStr = uri.toString();		
+	if(uriStr.toLowerCase().startsWith("wss://")){		 
+		SslContextFactory sslContextFactory = new SslContextFactory();
+	    sslContextFactory.setTrustAll(true); 
+	    wsc = new WebSocketClient(sslContextFactory);	      
+	} else {
+		wsc = new WebSocketClient();
+	}
+		  	      
     wsc.setMaxIdleTimeout(MAX_IDLE_TIME);
     wsc.setMaxTextMessageBufferSize(MAX_TEXT_MESSAGE_SIZE);
 
@@ -136,7 +147,7 @@ public class WebsocketInboundTransport extends InboundTransportBase
     }
     catch (Throwable t)
     {
-      t.printStackTrace();
+     LOGGER.error("WEBSOCKET_ERROR", t);            
     }
     return ws;
   }
