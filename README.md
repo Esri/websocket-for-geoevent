@@ -29,7 +29,7 @@ Installing the built jar files:
 
 ## Resources
 
-* [ArcGIS GeoEvent Server Gallery](http://links.esri.com/geoevent-gallery)
+* [ArcGIS GeoEvent Gallery](http://links.esri.com/geoevent-gallery)
 * [ArcGIS GeoEvent Server Resources](http://links.esri.com/geoevent)
 * [ArcGIS Blog](http://blogs.esri.com/esri/arcgis/)
 * [twitter@esri](http://twitter.com/esri)
@@ -60,5 +60,5 @@ limitations under the License.
 A copy of the license is available in the repository's [license.txt](license.txt?raw=true) file.
 
 [](ArcGIS, GeoEvent, Extension, Processor)
-[](Esri Tags: ArcGIS GeoEvent Processor for Server)
+[](Esri Tags: ArcGIS GeoEvent Server)
 [](Esri Language: Java)
