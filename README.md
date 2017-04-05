@@ -1,10 +1,10 @@
 # websocket-for-geoevent
 
-ArcGIS GeoEvent Server 10.5.x Sample WebSocket connector for subscribing to an external WebSocket
+ArcGIS GeoEvent Server sample WebSocket connector for subscribing to an external WebSocket.
 
 ![App](websocket-for-geoevent.png?raw=true)
 
-This WebSocket transport uses the latest org.eclipse.jetty version 9 libraries.  It is an inbound client-mode transport only.
+This WebSocket transport uses the latest org.eclipse.jetty version 9 libraries. It is an inbound client-mode transport only.
 
 ## Features
 * WebSocket Inbound Transport
@@ -59,6 +59,6 @@ limitations under the License.
 
 A copy of the license is available in the repository's [license.txt](license.txt?raw=true) file.
 
-[](ArcGIS, GeoEvent, Extension, Processor)
+[](ArcGIS, GeoEvent, Server, Extension, Processor)
 [](Esri Tags: ArcGIS GeoEvent Server)
 [](Esri Language: Java)
