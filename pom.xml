@@ -5,7 +5,7 @@
 
 	<groupId>com.esri.geoevent.parent</groupId>
 	<artifactId>websocket</artifactId>
-	<version>10.5.0</version>
+	<version>10.6.0</version>
 	<packaging>pom</packaging>
 
 	<name>Esri :: GeoEvent :: WebSocket</name>
